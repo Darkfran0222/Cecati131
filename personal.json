@@ -1,0 +1,61 @@
+[
+  {
+    "nombre" : "Omar Netzahualcoyotl Martinez Flores",
+    "puesto" : "Maestra",
+    "imagen" : "img/team-1.jpg"
+  },
+  {
+    "nombre" : "Veronica Rodriguez Hernandez",
+    "puesto" : "Maestra",
+    "imagen" : "img/team-1.jpg"
+  },
+  {
+    "nombre" : "faustina diaz diaz",
+    "puesto" : "",
+    "imagen" : "img/team-2.jpg"
+  },
+
+{
+  "nombre" : "herbert rodriguez vicente",
+  "puesto" : "",
+  "imagen" : "img/team-2.jpg"
+},
+
+{
+  "nombre" : "sanchez flores matilde",
+  "puesto" : "",
+  "imagen" : "img/team-2.jpg"
+
+},
+
+{
+  "nombre" : "beltran peña cesar jose",
+  "puesto" : "",
+  "imagen" : "img/team-2.jpg"
+},
+{
+  "nombre" : "peña ramos leon",
+  "puesto" : "",
+  "imagen" : "img/team-2.jpg"
+},
+{
+  "nombre" : "sandoval rodriguez marissa",
+  "puesto" : "",
+  "imagen" : "img/team-2.jpg"
+},
+{
+  "nombre" : "celaya corpus sergio",
+  "puesto" : "",
+  "imagen" : "img/team-2.jpg"
+},
+{
+  "nombre" : "perez santiago wilfrido de jesus",
+  "puesto" : "",
+  "imagen" : "img/team-2.jpg"
+},
+{
+  "nombre" : "A",
+  "puesto" : "",
+  "imagen" : "img/team-2.jpg"
+}
+]

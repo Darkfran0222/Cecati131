@@ -1,0 +1,56 @@
+drop database if exists CECATI;
+create database CECATI;
+use CECATI;
+
+create table Especialidades(
+	id int not null auto_increment primary key,
+	nombre varchar(32) not null
+);
+
+create table Cursos(
+	id int not null auto_increment primary key,
+	especialidad int not null references Especialidades(id),
+	nombre varchar(32) not null
+);
+
+create table Estudiantes(
+    id int not null auto_increment primary key,
+    curp varchar(32) not null unique,
+    password varchar(60) not null,
+    fecha_n date,
+    nombre varchar(32),
+    pr_apellido varchar(32),
+    se_apellido varchar(32),
+    telefono varchar(13),
+    tel_movil varchar(13),
+    email varchar(32) unique,
+    cod_post int,
+    calle varchar(32),
+    num_ext int,
+    num_int int,
+    colonia varchar(32),
+    estado varchar(32),
+    municipio varchar(32),
+    est_civil char,
+    discapacidad char,
+    nom_empresa varchar(32),
+    cod_post_emp int,
+    calle_emp varchar(32),
+    num_ext_emp int,
+    num_int_emp int,
+    col_emp varchar(32),
+    mun_emp varchar(32),
+    est_emp varchar(32),
+    tel_emp varchar(13),
+    ext_tel_emp varchar(13)
+);
+
+create table Inscripciones(
+	id int not null auto_increment primary key,
+	estudiante int references Estudiantes(id),
+	curso int references Cursos(id)
+);
+
+drop user if exists 'cecati';
+create user 'cecati' identified by 'cecati';
+grant all on CECATI.* to 'cecati'@'%';
